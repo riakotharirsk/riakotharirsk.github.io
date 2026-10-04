@@ -34,7 +34,7 @@ function App() {
     <main id="top">
       <section className="intro">
         <p className="eyebrow">Alternative investments · Financial markets</p>
-        <h1>Ria Shailen<br /><em>Kothari.</em></h1>
+        <h1>Ria Shailen<br />Kothari.</h1>
         <div className="intro-copy">
           <p>My career is driven by a passion for the financial markets and delivering exceptional value to clients.</p>
           <p>I am currently a <strong>Senior Analyst in Alternative Investments at Goldman Sachs</strong>, supporting private equity transactions. I am a Master of Finance ’24 graduate from Simon Business School with 4+ years of professional experience in finance, strategic decision making, financial analysis, and client relationships.</p>
@@ -44,7 +44,7 @@ function App() {
       <section className="content-section" id="projects">
         <div className="section-title"><span>01</span><h2>Projects</h2></div>
         <div className="project-list">{projects.map((project) => <article className="project-row" key={project.title}>
-          <div className="row-header"><div><p className="small-label">{project.type}</p><h3>{project.title}</h3></div><a className="action-link" href={project.file} target="_blank" rel="noreferrer">{project.fileLabel} <Download size={14} /></a></div>
+          <div className="row-header"><p className="small-label">{project.type}</p><div className="heading-line"><h3>{project.title}</h3><a className="action-link" href={project.file} target="_blank" rel="noreferrer">{project.fileLabel} <Download size={14} /></a></div></div>
           <p className="row-summary">{project.summary}</p>
         </article>)}</div>
       </section>
@@ -52,7 +52,7 @@ function App() {
         <div className="section-title"><span>02</span><h2>Articles</h2></div>
         <p className="section-note">Selected writing on private markets, infrastructure, public companies, and strategic judgment.</p>
         <div className="article-list">{articles.map((article) => <article className="article-row" key={article.number}>
-          <div className="row-header"><div className="article-heading"><span className="article-number">{article.number}</span><h3>{article.title}</h3></div><a className="action-link" href={article.link} target="_self">{article.linkLabel} <ArrowUpRight size={14} /></a></div>
+          <div className="row-header"><div className="heading-line article-heading"><span className="article-number">{article.number}</span><h3>{article.title}</h3><a className="action-link" href={article.link} target="_self">{article.linkLabel} <ArrowUpRight size={14} /></a></div></div>
           <p className="row-summary">{article.summary}</p>
         </article>)}</div>
       </section>
