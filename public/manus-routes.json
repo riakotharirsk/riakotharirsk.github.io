@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"Home"},{"path":"/projects/:slug","title":"Project detail"},{"path":"/insights/:slug","title":"Insight detail"}]}
