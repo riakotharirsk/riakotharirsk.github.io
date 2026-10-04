@@ -29,11 +29,9 @@ function App() {
   return <div className="site-shell">
     <header className="header">
       <a className="brand" href="#top"><span className="mark">RK/</span><span>Ria Shailen Kothari</span></a>
-      <nav><a href="#projects">Projects</a><a href="#articles">Articles</a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a></nav>
     </header>
     <main id="top">
       <section className="intro">
-        <p className="eyebrow">Alternative investments · Financial markets</p>
         <h1>Ria Shailen<br />Kothari</h1>
         <div className="intro-copy">
           <p>I am currently a Senior Analyst in Alternative Investments at Goldman Sachs, supporting private equity transactions. I am a Master of Finance ’24 graduate from Simon Business School with 4+ years of professional experience in finance, strategic decision making, financial analysis, and client relationships. My career is driven by a passion for the financial markets and delivering exceptional value to clients.</p>
