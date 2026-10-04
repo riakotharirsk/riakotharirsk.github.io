@@ -49,7 +49,7 @@ function App() {
         <div className="section-title"><span>Selected writing</span><h2>Articles</h2></div>
         <p className="section-note">Selected writing on private markets, infrastructure, public companies, and strategic judgment.</p>
         <div className="article-list">{articles.map((article) => <article className="article-row" key={article.number}>
-          <div className="row-header"><div className="heading-line article-heading"><span className="article-number">{article.number}</span><h3><a className="title-link" href={article.link} target="_self">{article.title}</a></h3></div></div>
+          <div className="row-header"><div className="heading-line article-heading"><h3><a className="title-link" href={article.link} target="_self">{article.title}</a></h3></div></div>
           <p className="row-summary">{article.summary}</p>
         </article>)}</div>
       </section>
