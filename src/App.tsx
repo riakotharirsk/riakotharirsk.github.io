@@ -9,7 +9,8 @@ type Article = { number: string; title: string; summary: string; link?: string; 
 const projects: Project[] = [
   { title: 'ABC Ltd simple LBO model', type: 'Private equity analysis', summary: 'Built a hypothetical CIM, income statement, DCF, and LBO model to understand Sources & Uses, leverage, MOIC, and IRR.', file: '/work-samples/private-company-investment-analysis-oar-dcf-lbo.pdf', fileLabel: 'Open PDF' },
   { title: 'Distribution waterfall model', type: 'Private equity modeling', summary: 'Modeled how distributions flow through return of capital, preferred return, catch-up, and LP/GP splits across American and European waterfalls.', file: '/work-samples/distribution-waterfall-model.xlsx', fileLabel: 'Download Excel' },
-  { title: 'Apple financial model', type: 'Public markets modeling', summary: 'Forecasted Apple’s financials and applied ratio analysis, WACC, regression beta, intrinsic growth, DCF, relative valuation, and risk analysis.', file: '/work-samples/apple-financial-model.xlsx', fileLabel: 'Download Excel' }
+  { title: 'Apple financial model', type: 'Public markets modeling', summary: 'Forecasted Apple’s financials and applied ratio analysis, WACC, regression beta, intrinsic growth, DCF, relative valuation, and risk analysis.', file: '/work-samples/apple-financial-model.xlsx', fileLabel: 'Download Excel' },
+  { title: 'HPE–Juniper acquisition analysis', type: 'Investment analysis internship', summary: 'Analyzed the acquisition through 30+ business, financial, and growth questions and contributed to a detailed investment report during an internship at Golden Door.', file: '/work-samples/hpe-juniper-writeup.docx', fileLabel: 'Open writeup' }
 ];
 
 const articles: Article[] = [
@@ -51,7 +52,7 @@ function App() {
         <div className="article-list">{articles.map((article) => <article className="article-row" key={article.number}>
           <span className="article-number">{article.number}</span>
           <div className="article-main"><h3>{article.title}</h3><p>{article.summary}</p></div>
-          <div className="article-actions">{article.link ? <a className="action-link" href={article.link} target="_blank" rel="noreferrer">{article.linkLabel} <ArrowUpRight size={14} /></a> : article.source ? <a className="action-link" href={article.source} target="_blank" rel="noreferrer"><FileText size={14} /> Source writeup <Download size={14} /></a> : <a className="profile-link" href={linkedin} target="_blank" rel="noreferrer">LinkedIn profile <ArrowUpRight size={14} /></a>}</div>
+          <div className="article-actions">{article.link ? <a className="action-link" href={article.link} target="_blank" rel="noreferrer">{article.linkLabel} <ArrowUpRight size={14} /></a> : article.source ? <a className="action-link" href={article.source} target="_blank" rel="noreferrer"><FileText size={14} /> Source writeup <Download size={14} /></a> : <span className="profile-link muted-link">Exact article URL needed</span>}</div>
         </article>)}</div>
       </section>
     </main>
