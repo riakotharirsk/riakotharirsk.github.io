@@ -1,18 +1,5 @@
 # Ria Kothari Portfolio — Simplified Plan
 
-## Scope
-Keep the website intentionally simple for the first version: one homepage with a Projects section and an Articles section. Use the supplied finance work samples and the public Google Doc as source material. Avoid long case-study pages, capabilities, extra editorial sections, and invented credentials.
+The website stays intentionally simple: one homepage with a Projects section and an Articles section. Projects are presented as compact rows with a category, a concise user-provided summary, and a view/download link. The separate OAR/DCF/LBO method-tag column has been removed.
 
-## Layout
-Use a quiet editorial layout with a short introduction, a compact project list, and an eight-item article list. The design uses ink navy, paper, warm gray rules, and a small chartreuse accent. Typography pairs DM Sans for interface copy with Cormorant Garamond for a restrained display accent. The visual hierarchy should support scanning rather than extended reading.
-
-## Content
-Projects: private-company investment analysis (OAR, DCF, LBO), distribution waterfall model, and Apple financial model. Each row includes a short description, method tags, and a view/download link to the supplied sample.
-
-Articles: eight entries total — seven extracted from the public Google Doc and the HPE/Juniper writeup supplied earlier. Use concise summaries. Preserve the direct LinkedIn short link provided for the exit-readiness article; use the LinkedIn profile as a fallback when an individual article URL was not included. Keep the HPE/Juniper DOCX available as a source-writeup download.
-
-## Structure
-- `src/App.tsx`: one-page content and row components.
-- `src/styles.css`: responsive simple list layout.
-- `public/work-samples/`: supplied files.
-- `public/manus-routes.json`: home route only.
+Projects currently include the ABC Ltd simple LBO model, distribution waterfall model, and Apple financial model. Articles include the seven entries from the public Google Doc plus the HPE–Juniper acquisition writeup. Summaries are condensed from the user’s supplied text; the Juniper entry notes the Golden Door internship and 30+ question investment-analysis process.

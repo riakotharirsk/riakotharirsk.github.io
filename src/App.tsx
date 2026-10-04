@@ -3,13 +3,13 @@ import './styles.css';
 
 const linkedin = 'https://www.linkedin.com/in/ria-kothari';
 
-type Project = { title: string; type: string; summary: string; tags: string[]; file: string; fileLabel: string };
+type Project = { title: string; type: string; summary: string; file: string; fileLabel: string };
 type Article = { number: string; title: string; summary: string; link?: string; linkLabel?: string; source?: string };
 
 const projects: Project[] = [
-  { title: 'Private-company investment analysis', type: 'Investment analysis', summary: 'Operating review with OAR, DCF, and LBO perspectives.', tags: ['OAR', 'DCF', 'LBO'], file: '/work-samples/private-company-investment-analysis-oar-dcf-lbo.pdf', fileLabel: 'Open PDF' },
-  { title: 'Distribution waterfall model', type: 'Private equity modeling', summary: 'Scenario-based distribution mechanics across splits, catch-ups, and IRR hurdles.', tags: ['Waterfalls', 'IRR hurdles'], file: '/work-samples/distribution-waterfall-model.xlsx', fileLabel: 'Download Excel' },
-  { title: 'Apple financial model', type: 'Public markets modeling', summary: 'Forecasts, ratio analysis, WACC, DCF, relative valuation, risk, and DuPont analysis.', tags: ['Forecasting', 'WACC', 'DCF'], file: '/work-samples/apple-financial-model.xlsx', fileLabel: 'Download Excel' }
+  { title: 'ABC Ltd simple LBO model', type: 'Private equity analysis', summary: 'Built a hypothetical CIM, income statement, DCF, and LBO model to understand Sources & Uses, leverage, MOIC, and IRR.', file: '/work-samples/private-company-investment-analysis-oar-dcf-lbo.pdf', fileLabel: 'Open PDF' },
+  { title: 'Distribution waterfall model', type: 'Private equity modeling', summary: 'Modeled how distributions flow through return of capital, preferred return, catch-up, and LP/GP splits across American and European waterfalls.', file: '/work-samples/distribution-waterfall-model.xlsx', fileLabel: 'Download Excel' },
+  { title: 'Apple financial model', type: 'Public markets modeling', summary: 'Forecasted Apple’s financials and applied ratio analysis, WACC, regression beta, intrinsic growth, DCF, relative valuation, and risk analysis.', file: '/work-samples/apple-financial-model.xlsx', fileLabel: 'Download Excel' }
 ];
 
 const articles: Article[] = [
@@ -20,7 +20,7 @@ const articles: Article[] = [
   { number: '05', title: 'Breaking Down Co-investments in Private Equity', summary: 'The structure, benefits, risks, and conditions that drive co-investment opportunities for institutional investors.' },
   { number: '06', title: 'The CHIPS Act and the Return of U.S. Semiconductor Manufacturing', summary: 'Why domestic chip manufacturing declined, what the CHIPS and Science Act is changing, and how the U.S. is rebuilding capacity.' },
   { number: '07', title: 'Starbucks Bets on a New Leader', summary: 'What Brian Niccol’s appointment meant for Starbucks, Chipotle, investor confidence, and the importance of leadership in a turnaround.' },
-  { number: '08', title: 'Can Juniper Stay Ahead of the Institutional Imperatives?', summary: 'A perspective on whether Juniper Networks can stay committed to its strategy while enterprise networking moves toward AI.', source: '/work-samples/hpe-juniper-writeup.docx' }
+  { number: '08', title: 'Can Juniper Stay Ahead of the Institutional Imperatives?', summary: 'During an internship at Golden Door, analyzed the HPE–Juniper acquisition through 30+ business, financial, and growth questions and contributed to a detailed investment report.', source: '/work-samples/hpe-juniper-writeup.docx' }
 ];
 
 function App() {
@@ -41,7 +41,6 @@ function App() {
         <div className="section-title"><span>01</span><h2>Projects</h2></div>
         <div className="project-list">{projects.map((project) => <article className="project-row" key={project.title}>
           <div className="project-main"><p className="small-label">{project.type}</p><h3>{project.title}</h3><p>{project.summary}</p></div>
-          <div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
           <a className="action-link" href={project.file} target="_blank" rel="noreferrer">{project.fileLabel} <Download size={14} /></a>
         </article>)}</div>
       </section>
