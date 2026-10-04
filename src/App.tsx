@@ -52,7 +52,7 @@ function App() {
         <div className="article-list">{articles.map((article) => <article className="article-row" key={article.number}>
           <span className="article-number">{article.number}</span>
           <div className="article-main"><h3>{article.title}</h3><p>{article.summary}</p></div>
-          <div className="article-actions">{article.link ? <a className="action-link" href={article.link} target="_blank" rel="noreferrer">{article.linkLabel} <ArrowUpRight size={14} /></a> : article.source ? <a className="action-link" href={article.source} target="_blank" rel="noreferrer"><FileText size={14} /> Source writeup <Download size={14} /></a> : <span className="profile-link muted-link">Exact article URL needed</span>}</div>
+          <div className="article-actions">{article.link ? <a className="action-link" href={article.link} target="_self">{article.linkLabel} <ArrowUpRight size={14} /></a> : article.source ? <a className="action-link" href={article.source} target="_blank" rel="noreferrer"><FileText size={14} /> Source writeup <Download size={14} /></a> : <span className="profile-link muted-link">Exact article URL needed</span>}</div>
         </article>)}</div>
       </section>
     </main>
