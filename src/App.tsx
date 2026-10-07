@@ -32,11 +32,16 @@ function App() {
     </header>
     <main id="top">
       <section className="intro">
-        <h1>Ria Shailen<br />Kothari</h1>
-        <div className="intro-copy">
-          <p>I am currently a Senior Analyst in Alternative Investments at Goldman Sachs, supporting private equity transactions. I am a Master of Finance ’24 graduate from Simon Business School with 4+ years of professional experience in finance, strategic decision making, financial analysis, and client relationships. My career is driven by a passion for the financial markets and delivering exceptional value to clients.</p>
+        <div className="intro-layout">
+          <div className="intro-content">
+            <h1>Ria Shailen<br />Kothari</h1>
+            <div className="intro-copy">
+              <p>I am currently a Senior Analyst in Alternative Investments at Goldman Sachs, supporting private equity transactions. I am a Master of Finance ’24 graduate from Simon Business School with 4+ years of professional experience in finance, strategic decision making, financial analysis, and client relationships. My career is driven by a passion for the financial markets and delivering exceptional value to clients.</p>
+            </div>
+            <div className="contact-strip"><a href={`mailto:${email}`}><Mail size={15} /> {email}</a><a href={`tel:${phone}`}><Phone size={15} /> (585) 305-8201</a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a></div>
+          </div>
+          <img className="portrait" src="/manus-storage/pasted_file_umcQgy_image_dd719fcd.png" alt="Portrait of Ria Shailen Kothari" />
         </div>
-        <div className="contact-strip"><a href={`mailto:${email}`}><Mail size={15} /> {email}</a><a href={`tel:${phone}`}><Phone size={15} /> (585) 305-8201</a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a></div>
       </section>
       <section className="content-section" id="projects">
         <div className="section-title"><span>Selected work</span><h2>Projects</h2></div>
