@@ -25,6 +25,10 @@ const articles: Article[] = [
   { number: '07', title: 'Starbucks Bets on a New Leader', summary: 'What Brian Niccol’s appointment meant for Starbucks, Chipotle, investor confidence, and the importance of leadership in a turnaround.', link: 'https://www.linkedin.com/posts/activity-7229333381027684352-0hfR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChOc8oBOZOslw3aWIVhGGYp6bBd3MuH2AA', linkLabel: 'Open article' }
 ];
 
+function LinkedInIcon() {
+  return <svg className="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.56V9H3.56v11.45Z" /></svg>;
+}
+
 function App() {
   return <div className="site-shell">
     <header className="header">
@@ -38,7 +42,7 @@ function App() {
             <div className="intro-copy">
               <p>I am currently a Senior Analyst in Alternative Investments at Goldman Sachs, supporting private equity transactions. I am a Master of Finance ’24 graduate from Simon Business School with 4+ years of professional experience in finance, strategic decision making, financial analysis, and client relationships. My career is driven by a passion for the financial markets and delivering exceptional value to clients.</p>
             </div>
-            <div className="contact-strip"><a href={`mailto:${email}`}><Mail size={15} /> {email}</a><a href={`tel:${phone}`}><Phone size={15} /> (585) 305-8201</a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a></div>
+            <div className="contact-strip"><a href={`mailto:${email}`}><Mail size={15} /> {email}</a><a href={`tel:${phone}`}><Phone size={15} /> (585) 305-8201</a><a href={linkedin} target="_blank" rel="noreferrer"><LinkedInIcon /> LinkedIn <ArrowUpRight size={14} /></a></div>
           </div>
           <img className="portrait" src="/manus-storage/profile-ria-muted_0d3ef9d2.png" alt="Portrait of Ria Shailen Kothari" />
         </div>
@@ -54,7 +58,7 @@ function App() {
         <div className="section-title"><span>Selected writing</span><h2>Articles</h2></div>
         <p className="section-note">Selected writing on private markets, infrastructure, public companies, and strategic judgment.</p>
         <div className="article-list">{articles.map((article) => <article className="article-row" key={article.number}>
-          <div className="row-header"><div className="heading-line article-heading"><h3><a className="title-link" href={article.link} target="_self">{article.title}</a></h3></div></div>
+          <div className="row-header"><div className="heading-line article-heading"><h3><a className="title-link" href={article.link} target="_blank" rel="noreferrer">{article.title}</a></h3></div></div>
           <p className="row-summary">{article.summary}</p>
         </article>)}</div>
       </section>
