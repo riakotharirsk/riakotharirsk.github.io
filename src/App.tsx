@@ -40,7 +40,7 @@ function App() {
             </div>
             <div className="contact-strip"><a href={`mailto:${email}`}><Mail size={15} /> {email}</a><a href={`tel:${phone}`}><Phone size={15} /> (585) 305-8201</a><a href={linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a></div>
           </div>
-          <img className="portrait" src="/manus-storage/pasted_file_umcQgy_image_dd719fcd.png" alt="Portrait of Ria Shailen Kothari" />
+          <img className="portrait" src="/manus-storage/profile-ria-muted_0d3ef9d2.png" alt="Portrait of Ria Shailen Kothari" />
         </div>
       </section>
       <section className="content-section" id="projects">
