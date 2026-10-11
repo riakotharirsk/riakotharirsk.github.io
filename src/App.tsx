@@ -63,7 +63,6 @@ function App() {
         </article>)}</div>
       </section>
     </main>
-    <footer className="footer"><span><span className="mark">RK/</span> Finance & investment analysis</span><a href={`mailto:${email}`}>Contact Ria <ArrowUpRight size={14} /></a></footer>
   </div>;
 }
 
